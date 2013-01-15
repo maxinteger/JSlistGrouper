@@ -7,7 +7,7 @@
 */
 
 (function ($) {
-	$.fn.groupList = function (options) {
+	$.fn.listGroup = function (options) {
 		var O = $.extend({}, {
 			itemClass :'item',			// List item class
 			groupClass : 'item-group',	// List group item class
