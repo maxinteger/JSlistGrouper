@@ -8,9 +8,40 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://raw.github.com/maxinteger/JSlistGrouper/master/js-list-group.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#id-name-list').listGroup({itemClass: 'name'});
+		});
+	</script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+      <style type="text/css">
+	 	#id-names{
+	 		width: 200px;
+	 		margin: 0 auto;
+	 	}
+		#id-name-list{
+			display: block;
+			margin: 0;
+			padding: 0;
+			border: 1px dotted #aaa;
+			height: 300px;
+			list-style: none;
+			overflow-y: auto;
+			overflow-x: hidden;
+		}
+		#id-name-list li.item-group{
+			padding: 3px;
+			width: 100%;
+			border-bottom: 1px solid #ccc;
+			font-weight: bold;
+			background-color: #ddd;
+		}
+	</style>
   </head>
   <body>
     <div class="wrapper">
@@ -29,31 +60,93 @@
       </header>
       <section>
         <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+	<h3>List Group Sample</h3>
+      	<div id="id-names">
+      		<ul id="id-name-list">
+      			<li class="name">Andor</li>
+      			<li class="name">András</li>
+      			<li class="name">Antal</li>
+      			<li class="name">Attila</li>
+      			<li class="name">Ákos</li>
+      			<li class="name">Álmos</li>
+      			<li class="name">Árpád</li>
+      			<li class="name">Balázs</li>
+      			<li class="name">Bálint</li>
+      			<li class="name">Barna</li>
+      			<li class="name">Barnabás</li>
+      			<li class="name">Béla</li>
+      			<li class="name">Bence</li>
+      			<li class="name">Bendegúz</li>
+      			<li class="name">Bíborka</li>
+      			<li class="name">Boglárka</li>
+      			<li class="name">Boldizsár</li>
+      			<li class="name">Borbála</li>
+      			<li class="name">Boróka</li>
+      			<li class="name">Botond</li>
+      			<li class="name">Bulcsú</li>
+      			<li class="name">Csaba</li>
+      			<li class="name">Csanád</li>
+      			<li class="name">Csenge</li>
+      			<li class="name">Csilla</li>
+      			<li class="name">Csongor</li>
+      			<li class="name">Dalma</li>
+      			<li class="name">Dénes</li>
+      			<li class="name">Dezső</li>
+      			<li class="name">Domonkos</li>
+      			<li class="name">Dóra</li>
+      			<li class="name">Dorottya</li>
+      			<li class="name">Emese</li>
+      			<li class="name">Endre</li>
+      			<li class="name">Enikő</li>
+      			<li class="name">Erzsébet</li>
+      			<li class="name">Gábor</li>
+      			<li class="name">Gellért</li>
+      			<li class="name">Gergely</li>
+      			<li class="name">Géza</li>
+      			<li class="name">György</li>
+      			<li class="name">Gyula</li>
+      			<li class="name">Hajnalka</li>
+      			<li class="name">Hanga</li>
+      			<li class="name">Hunor</li>
+      			<li class="name">Ildikó</li>
+      			<li class="name">Imre</li>
+      			<li class="name">István</li>
+      			<li class="name">Jenő</li>
+      			<li class="name">Kálmán</li>
+      			<li class="name">Kende</li>
+      			<li class="name">Kincső</li>
+      			<li class="name">Kinga</li>
+      			<li class="name">Kolos</li>
+      			<li class="name">Koppány</li>
+      			<li class="name">László</li>
+      			<li class="name">Levente</li>
+      			<li class="name">Lilla</li>
+      			<li class="name">Lóránt</li>
+      			<li class="name">Lőrinc</li>
+      			<li class="name">Luca</li>
+      			<li class="name">Mátyás</li>
+      			<li class="name">Nándor</li>
+      			<li class="name">Nimród</li>
+      			<li class="name">Orsolya</li>
+      			<li class="name">Pál</li>
+      			<li class="name">Réka</li>
+      			<li class="name">Sebestyén</li>
+      			<li class="name">Soma</li>
+      			<li class="name">Szabolcs</li>
+      			<li class="name">Szilárd</li>
+      			<li class="name">Tibor</li>
+      			<li class="name">Tímea</li>
+      			<li class="name">Tünde</li>
+      			<li class="name">Viola</li>
+      			<li class="name">Virág</li>
+      			<li class="name">Zalán</li>
+      			<li class="name">Zétény</li>
+      			<li class="name">Zoltán</li>
+      			<li class="name">Zselyke</li>
+      			<li class="name">Zsolt</li>
+      			<li class="name">Zsombor</li>
+      		</ul>
+      	</div>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/maxinteger">maxinteger</a></p>
